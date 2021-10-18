@@ -1,0 +1,68 @@
+/*Es una funcion de css3 que hace que una pagina web
+  adapte su diseño a diferentes tamaños de pantalla o 
+  diferentes medios*/
+
+/*Acciones de las media queries:
+
+    all - Para todos los tipos de medios
+    print - Para impresoras
+    screen - Para pantallas
+    speech - para lectores de pantalla que "leen"
+             la pagina en voz alta
+             
+
+*/  
+
+/*Referencias de tamaño
+    320px - 480px: dispositivos moviles
+    481px - 768px: ipads, tabletas
+    769px -1024px: escritorios, pantallas grandes
+    1201px y mas: pantallas extragrandes, TV
+
+
+*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div{
+
+    background-color: darkcyan;
+    padding: 10px;
+    margin: 20px 20px;
+   
+}
+
+.texto{
+
+
+    color: white;
+    font-size: 20px;
+
+}
+
+/*Hay que expecificar un rango*/
+@media screen and (max-width: 480px){
+
+    /*A que selectores se les aplicara esto,*/
+    div{
+
+        background-color: darkred;
+
+
+    }
+
+}
